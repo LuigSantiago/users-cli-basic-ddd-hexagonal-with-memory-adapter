@@ -1,6 +1,6 @@
 package com.jcaa.udec.collections.entrypoint;
 
-import com.jcaa.udec.collections.adapter.out.InMemoryVehiculoRepository;
+import com.jcaa.udec.collections.adapter.persistence.memory.InMemoryVehiculoRepository;
 import com.jcaa.udec.collections.application.service.VehiculoUseCase;
 import com.jcaa.udec.collections.domain.core.model.Vehiculo;
 import com.jcaa.udec.collections.domain.port.out.VehiculoOutputPort;
@@ -22,11 +22,11 @@ public class VehiculoConsoleAdapter {
         int opcion = -1;
         while (opcion != 0) {
             System.out.println("\n--- GESTIÓN DE VEHÍCULOS (CEA) ---");
-            System.out.println("1. Registrar Vehículo (C)");
-            System.out.println("2. Buscar Vehículo por ID (R)");
-            System.out.println("3. Listar todos los Vehículos (L)");
-            System.out.println("4. Actualizar Vehículo (U)");
-            System.out.println("5. Eliminar Vehículo (D)");
+            System.out.println("1. Registrar Vehículo");
+            System.out.println("2. Buscar Vehículo por ID");
+            System.out.println("3. Listar todos los Vehículos");
+            System.out.println("4. Actualizar Vehículo");
+            System.out.println("5. Eliminar Vehículo");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
 
